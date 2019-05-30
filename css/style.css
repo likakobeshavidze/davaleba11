@@ -1,0 +1,190 @@
+.container {
+	max-width: 1170px; 
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container2 {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.logo {
+	width: 200px;
+}
+
+.header {
+	padding: 50px 30px;
+}
+
+.header a {
+	font-size: 20px;
+	color: grey;
+	margin-left: 30px;
+	text-transform: uppercase;
+}
+.header i {
+	display: none;
+}
+.image img {
+	max-width: 1100px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.photodiary {
+	margin-top: 100px;
+}
+
+h3 {
+	margin-top: 20px;
+	color: grey;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.photodiary h1 {
+	margin-top: 20px;
+	font-size: 20px;
+	color: 	#696969;
+}
+
+.photodiary p {
+	margin: 20px 0;
+
+}
+
+.sections {
+	margin-top: 100px;
+}
+
+.section h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: 	#696969;
+}
+
+.section img {
+	max-width: 420px;
+	width: 100%;
+
+}
+
+.section p {
+	max-width: 400px;
+	width: 100%;
+}
+
+.sign {
+	background-color: #F0F0F0; 
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.sign h1 {
+	padding-top: 20px; 
+	font-size: 14px;
+	text-transform: uppercase;
+	color: grey;
+}
+
+.form {
+	margin-top: 20px;
+}
+.form label {
+	display: block;
+	margin: 10px auto;
+}
+
+.form input {
+	padding: 12px 20px;
+ 	margin: 8px 0;
+  	border: 1px solid #ccc;
+}
+
+input[type=submit] {
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	cursor: pointer;
+}
+
+
+.loadmore {
+	margin: 100px auto;
+	width: 150px;	
+	text-align: center;
+}
+.loadmore p {
+	color: grey;
+	padding: 10px;
+	font-size: 20px; 
+	border: 1px solid grey;
+	cursor: pointer;
+}
+
+.footer {
+	margin-top: 100px; 
+	height: 100px;
+	background-color: #F0F0F0; 
+	padding: 0 50px;
+}
+.footer p {
+	color: grey;
+}
+
+.footer i {
+	margin-left: 20px;
+}
+
+
+/*responsive*/
+
+@media (max-width: 860px){
+	.flex {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.nav-ul {display: none}
+
+	.header i {
+		display: inline-block;	
+	}
+	.header, .socials {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+
+	.footer p {
+		margin-top: 20px;
+	}
+
+	.section img {
+		margin-top: 20px;
+	}
+
+	.photodiary, .section {
+		padding: 0 10px;
+	}
+}
